@@ -1,38 +1,106 @@
-.App {
+/* package com.company;
+import java.util.Scanner;
+public class main{ 
+public static vold main (String[] args ){
+
+
+
+
+  
+}
+
+
+} */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-areas: 'header header'
+  'nav content';
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 7px; 
+  background-color: #f6f6f6;
+  font-size: 16px;
+  height: 100vh;
+}
+
+.header{
+  grid-area: header;
+  background-color: transparent;
+}
+
+.header img{
+  max-width: 100px;
+}
+
+.nav{
+  grid-area: nav;
+  background-color:#2397d5;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  text-transform: capitalize;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav a{
+  padding: 20px;
   color: white;
+text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+.profile{
+  grid-area:content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper-img{
+height: 300px;
+background-image: url('https://www.lufthansa.com/content/dam/lh/images/local_variations/c-552088274-lh_together-again_liberty-statue.jpg.transform/lh-dcep-transform-width-1440/img.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom;
+margin-bottom: 20px;
+}
+
+.content-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper img{
+  padding-right: 20px;
+}
+
+.content-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+h3{
+  padding-left: 12px;
+}
+
+
+.post{
+  margin:30px 0 15px;
+}
+input{
+      width: 90%;
+      height: 100px;
+      margin-top: 6px;
+      background: #80808096;
+      border: none;
+      border-radius: 3px;
 }
