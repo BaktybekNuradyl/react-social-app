@@ -46,6 +46,11 @@ const Profile = () => {
 </div>
 
 
+<div className='post'>
+<h2>My new posts</h2>
+    <input type='textarea' />
+</div>
+
 </div>
 
 
