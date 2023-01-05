@@ -22,7 +22,8 @@ public static vold main (String[] args ){
 .wrapper{
   display: grid;
   grid-template-areas: 'header header'
-  'nav content';
+  'nav content'
+  'footer footer';
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 7px; 
@@ -103,4 +104,16 @@ input{
       background: #80808096;
       border: none;
       border-radius: 3px;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: rgb(26, 19, 19);
+  padding: 30px 0;
+  text-align: center;
+}
+.footer a{
+  color: white;
+  font-size: 20px;
+  margin: 0 15px;
 }

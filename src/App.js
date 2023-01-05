@@ -1,5 +1,6 @@
 
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Nav';
 import Profile from './components/Profile';
@@ -15,6 +16,8 @@ function App() {
     <Navbar/>
 
     <Profile/>
+
+    <Footer/>
 
 </div>
 
